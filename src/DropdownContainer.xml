@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="mendix.dropdowncontainer.DropdownContainer" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Dropdown Container</name>
+    <description>Place Mendix components in a dropdown.</description>
+    <icon>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAFWUExURQAAACIiIlVVVVlZWRUVFRYWFjExMQEBAQEBASUlJQYGBgAAAAAAAFBQUAAAAAAAAFpaWh8fH2dnZw0NDRYWFhYWFi0tLRgYGBQUFBcXFxQUFC0tLS0tLSMjIwAAABgYGBISEo+PjwYGBh0dHSYmJg8PDxEREQkJCQsLCyQkJBYWFjw8PBkZGR8fHwICAnR0dA8PDykpKRoaGhwcHImJiTs7Ox8fHyIiIjk5OQsLCyoqKg8PDwICAiUlJRkZGTAwMCgoKDg4ODc3NykpKQ8PDyUlJS8vL2lpaSIiImNjYzAwMAYGBjg4OBEREUxMTEZGRgUFBU5OTlBQUFVVVV9fX3V1dQ4ODktLSwoKCg4ODlVVVXNzc0NDQxERET8/Pz8/PwYGBk9PTwkJCQwMDIWFhaWlpTIyMi4uLgAAAAAAAAEBAQICAgMDAwgICAQEBAUFBQoKCgcHB/3dI94AAABpdFJOUwCiMxRSaD7+3Ev0/twz498zojbcUU8+x8l100mSg91SmBDse3/T0fjkdlAVUFDgLtWTv7wNHnhLH/MMUt+BlEpLEoZKUXQQEUoSbvAJv1o29VgTFVMNvDPMtCoLIr1oeOo9/fkVEZKO4hxlh7kAAAFZSURBVFjD7ZbXb4MwEIfdFWihSZvuvffeu+nee++9ztD1/7/0jhBRpAQJ05dG/p7MgT9xxvoZxiQSieQvmawom9ZVn/SWj67Y8/vaAYD7BuAuas0fngCuiMDh8ZkEM4AX4I2S5BEqvZKgEoeadwu2wHA1oGGpiARhrsBnU3F2arrrsUkY7Jmqc2pLy1+g8DAJavHmx4jnZyrBF4Zqd231HQU6jVQU8JCnIIcEGe5agYECNSEwSn0LMk2XIPQPBfm+BYWMXVwdZBGHu5fsVERwBFoesgfnxwJvQC3cxHfx2RYTFLB9Gp0EWcQdgOtgX+F2O202UhoInDzQUWCOewo6STDgrq1/JxKJMtHsWMxNTdUsZeJQbGzOqa1tUKS9kaDfCmivUDaMeCrz5Km8EOBceCFBQ5vwyfTwZC1HtFHkaMQmNu/tBZ1vbo34PZzVSEtNl/yxkUgkv/gBeoH3qlQnFKEAAAAASUVORK5CYII=</icon>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="generalButtonText" type="textTemplate" required="false">
+                <caption>Button text</caption>
+                <description>Button text. This is a text template, so you can use values from an attribute.</description>
+            </property>
+            <property key="generalButtonGlyphicon" type="string" required="false">
+                <caption>Glyphicon icon</caption>
+                <description>Add a Bootstrap glyphicon icon to the button by entering the glyphicon classname (e.g. 'glyphicon-user'). If left empty, no icon will be created.</description>
+            </property>
+            <property key="generalIsDropUp" type="boolean" defaultValue="false">
+                <caption>Drop up</caption>
+                <description>Use a drop up menu instead of a dropdown menu.</description>
+            </property>
+            <property key="generalIsRightAligned" type="boolean" defaultValue="false">
+                <caption>Right aligned menu</caption>
+                <description>Align the menu to the right for right-hand side usage of the view.</description>
+            </property>
+            <property key="generalStartOpen" type="boolean" defaultValue="false">
+                <caption>Start open</caption>
+                <description>Will the menu be open on load?</description>
+            </property>
+            <property key="generalAutoClose" type="boolean" defaultValue="true">
+                <caption>Menu self-close</caption>
+                <description>If set to true: clicking on the menu or it's buttons will close the dropdown menu.</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Elements">
+            <property key="content" type="widgets" required="false">
+                <caption>Dropdown Container Content</caption>
+                <description>Elements</description>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Appearance">
+            <property key="appearanceButtonSize" type="enumeration" defaultValue="default">
+                <caption>Button size</caption>
+                <description>The size of the dropdown button</description>
+                <enumerationValues>
+                    <enumerationValue key="lg">large</enumerationValue>
+                    <enumerationValue key="default">default</enumerationValue>
+                    <enumerationValue key="sm">small</enumerationValue>
+                    <enumerationValue key="xs">extra small (n.a. in MX8)</enumerationValue>
+                </enumerationValues>
+            </property>
+            <property key="appearanceButtonType" type="enumeration" defaultValue="default">
+                <caption>Button type</caption>
+                <description>The (bootstrap-) type of the dropdown button</description>
+                <enumerationValues>
+                    <enumerationValue key="default">default</enumerationValue>
+                    <enumerationValue key="primary">primary</enumerationValue>
+                    <enumerationValue key="success">success</enumerationValue>
+                    <enumerationValue key="info">info</enumerationValue>
+                    <enumerationValue key="warning">warning</enumerationValue>
+                    <enumerationValue key="danger">danger</enumerationValue>
+                    <enumerationValue key="link">link</enumerationValue>
+                </enumerationValues>
+            </property>
+        </propertyGroup>
+        <propertyGroup caption="Split button">
+            <property key="splitButtonSplitButtonActive" type="boolean" defaultValue="false" required="true">
+                <caption>Split button dropdown</caption>
+                <description>Create a split button dropdown which has an extra button with an action. Note: the label for the dropdown will be used for this button.</description>
+            </property>
+            <property key="splitButtonSplitButtonClicked" type="action" required="false">
+                <caption>On click action</caption>
+                <description/>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

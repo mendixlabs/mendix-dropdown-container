@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropDown should render the structure correctly 1`] = `
+<div
+  className="dropdown btn-group open dropup"
+>
+  <button
+    className="btn dropdown-toggle dropdown-button btn-danger btn-sm"
+    onClick={[Function]}
+    type="button"
+  >
+    <span
+      className="glyphicon glyphicon-option-horizontal"
+    />
+    <span
+      className="caret"
+    />
+  </button>
+  <div
+    className="dropdown-menu dropdown-menu-right"
+    onClick={[Function]}
+  />
+</div>
+`;

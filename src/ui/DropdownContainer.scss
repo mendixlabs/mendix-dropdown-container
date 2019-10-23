@@ -1,0 +1,42 @@
+.dropdown {
+    .dropdown-button {
+        display: block;
+
+        .caret {
+            margin-left:5px;
+
+            &.no-margin {
+                margin-left: 0;
+            }
+        }
+
+        + .dropdown-button .caret {
+            margin-left:0;
+        }
+    }
+
+    > .dropdown-menu {
+        display: none;
+        padding: 5px;
+    }
+
+    &.open > .dropdown-menu {
+        display: block;
+    }
+
+    button {
+        .glyphicon {
+            margin-right: 0.8em;
+        }
+    }
+
+    /* for bootstrap versions below 3.1 */
+    .dropdown-menu-right {
+        right: 0;
+        left: auto;
+    }
+}
+.dropdown-studio-disabled {
+    font-size: 10px !important;
+    display: block;
+}
