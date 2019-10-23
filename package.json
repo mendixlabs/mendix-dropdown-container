@@ -6,12 +6,12 @@
   "copyright": "Mendix 2019",
   "author": "Jelte Lagendijk <jelte.lagendijk@mendix.com>",
   "config": {
-    "_widgetPath": "./dist/MxTestProject/widgets",
-    "_projectPath": "./dist/MxTestProject/",
-    "_mendixHost": "http://localhost:8080",
-    "widgetPath": "/Volumes/[C] Windows 10.hidden/Projects/MendixProjects/DropDownPluginWidget-main/widgets",
-    "projectPath": "/Volumes/[C] Windows 10.hidden/Projects/MendixProjects/DropDownPluginWidget-main/",
-    "mendixHost": "http://10.211.55.3:8080/",
+    "widgetPath": "./dist/MxTestProject/widgets",
+    "projectPath": "./dist/MxTestProject/",
+    "mendixHost": "http://localhost:8080",
+    "_widgetPath": "/Volumes/[C] Windows 10.hidden/Projects/MendixProjects/DropDownPluginWidget-main/widgets",
+    "_projectPath": "/Volumes/[C] Windows 10.hidden/Projects/MendixProjects/DropDownPluginWidget-main/",
+    "_mendixHost": "http://10.211.55.3:8080/",
     "developmentPort": "3000"
   },
   "packagePath": "mendix",
