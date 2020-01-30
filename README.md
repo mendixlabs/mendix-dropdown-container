@@ -3,8 +3,8 @@
 [![DevDependencies](https://david-dm.org/JelteMX/mendix-dropdown-container/dev-status.svg)]([https://david-dm.org/JelteMX/mendix-dropdown-container?type=dev](https://david-dm.org/JelteMX/mendix-dropdown-container?type=dev))
 [![Support](https://img.shields.io/badge/Support-Community%20(no%20active%20support)-orange.svg)](https://docs.mendix.com/developerportal/app-store/app-store-content-support)
 [![Studio](https://img.shields.io/badge/Studio%20version-8.2%2B-blue.svg)](https://appstore.home.mendix.com/link/modeler/)
-![GitHub release](https://img.shields.io/github/release/JelteMX/mendix-dropdown-container)
-![GitHub issues](https://img.shields.io/github/issues/JelteMX/mendix-dropdown-container)
+[![GitHub release](https://img.shields.io/github/release/JelteMX/mendix-dropdown-container)](https://github.com/JelteMX/mendix-dropdown-container/releases/latest)
+[![GitHub issues](https://img.shields.io/github/issues/JelteMX/mendix-dropdown-container)](https://github.com/JelteMX/mendix-dropdown-container/issues)
 
 # Dropdown Container
 
