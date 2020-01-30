@@ -98,7 +98,7 @@ export class DropDownInternal extends Component<DropDownProps, DropDownState> {
         $menu.find("button, a").each(function() {
             const $el = $(this);
 
-            if (!$el.data(dropDownDataAttribute)) {
+            if ($el && !$el.data(dropDownDataAttribute)) {
                 $el.data(dropDownDataAttribute, true);
                 const el = $el.get(0) as HTMLElement;
                 el.addEventListener("click", closeMenu);
@@ -108,7 +108,7 @@ export class DropDownInternal extends Component<DropDownProps, DropDownState> {
         $menu.find(".mx-listview-clickable .mx-list").each(function() {
             const $el = $(this);
 
-            if (!$el.data(dropDownDataAttribute)) {
+            if ($el && !$el.data(dropDownDataAttribute)) {
                 $el.data(dropDownDataAttribute, true);
                 const el = $el.get(0) as HTMLElement;
                 el.addEventListener("click", closeMenu, true);

@@ -53,6 +53,10 @@ Place the widget inside or outside a context object, based on if you need this f
 
 Test-project can be found here: [https://dropdownpluginwidg-sandbox.mxapps.io](https://dropdownpluginwidg-sandbox.mxapps.io)
 
+## Known issues
+
+- **(Platform issue)** __A Dropdown container cannot be used directly in a listview, only a dataview.__ If you want to use a dropdown in a listview, make sure you surround your container with a dataview. Obviously this should be the same as the context. One way to do this is to add a dataview with a Nanoflow datasource. The Nanoflow simply passes the context object to the dataview
+
 ## Issues, suggestions and feature requests
 
 Please report your issues/suggestions [here](https://github.com/JelteMX/mendix-dropdown-container/issues)
