@@ -8,10 +8,7 @@
   "config": {
     "widgetPath": "./dist/MxTestProject/widgets",
     "projectPath": "./dist/MxTestProject/",
-    "mendixHost": "http://localhost:8080",
-    "_widgetPath": "/Volumes/[C] Windows 10.hidden/Projects/MendixProjects/DropDownPluginWidget-main/widgets",
-    "_projectPath": "/Volumes/[C] Windows 10.hidden/Projects/MendixProjects/DropDownPluginWidget-main/",
-    "_mendixHost": "http://10.211.55.3:8080/",
+    "mendixHost": "http://10.211.55.3:8080/",
     "developmentPort": "3000"
   },
   "packagePath": "mendix",
@@ -33,7 +30,7 @@
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.2.0",
+    "@mendix/pluggable-widgets-tools": "git@github.com:mendix/pluggable-widgets-tools.git",
     "@types/big.js": "^4.0.5",
     "@types/classnames": "^2.2.4",
     "@types/enzyme": "^3.1.10",

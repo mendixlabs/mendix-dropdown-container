@@ -33,7 +33,10 @@ export interface DropdownContainerContainerProps extends CommonProps {
     splitButtonSplitButtonClicked?: ActionValue;
 }
 
-export interface DropdownContainerPreviewProps extends CommonProps {
+export interface DropdownContainerPreviewProps {
+    class: string;
+    style: string;
+    styleObject: CSSProperties;
     generalButtonText?: string;
     generalButtonGlyphicon?: string;
     generalIsDropUp: boolean;
