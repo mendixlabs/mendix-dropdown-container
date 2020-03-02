@@ -6,6 +6,7 @@
 [![Studio](https://img.shields.io/badge/Studio%20version-8.2%2B-blue.svg)](https://appstore.home.mendix.com/link/modeler/)
 [![GitHub release](https://img.shields.io/github/release/JelteMX/mendix-dropdown-container)](https://github.com/JelteMX/mendix-dropdown-container/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/JelteMX/mendix-dropdown-container)](https://github.com/JelteMX/mendix-dropdown-container/issues)
+[![Available](https://img.shields.io/badge/Test%20Project-available-green.svg)](https://github.com/JelteMX/widget-test-projects)
 
 # Dropdown Container
 
