@@ -17,6 +17,7 @@ Add Mendix elements to a dropdown container. Heavily based on [DropDownDivConver
 From Mendix 8.2.x and upwards it is possible to to add standard Mendix components to widgets. This Dropdown Container will behave as a dropdown button, but you can model the inside of the container using Mendix Studio Pro.
 
 > NOTE: A Pluggable widget (as of now) can only contain other pluggable components like buttons and texts. You cannot add listviews. This is a limitation in the platform, not the widget. See [here](https://github.com/JelteMX/mendix-dropdown-container/issues/3)
+> UPDATE: It seems that the capabilities for containment area's (that is used in this widget) is improved in [Mendix Studio 8.10](https://docs.mendix.com/releasenotes/studio-pro/8.10#8100). If you have issues, please update to at least 8.10.
 
 ![Modeler](/assets/modeler.png)
 
