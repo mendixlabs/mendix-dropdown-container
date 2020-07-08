@@ -26,6 +26,7 @@ export interface DropdownContainerContainerProps extends CommonProps {
     generalIsRightAligned: boolean;
     generalStartOpen: boolean;
     generalAutoClose: boolean;
+    renderMenuContentWhenClosed: boolean;
     content?: ReactNode;
     appearanceButtonSize: AppearanceButtonSizeEnum;
     appearanceButtonType: AppearanceButtonTypeEnum;
@@ -43,6 +44,7 @@ export interface DropdownContainerPreviewProps {
     generalIsRightAligned: boolean;
     generalStartOpen: boolean;
     generalAutoClose: boolean;
+    renderMenuContentWhenClosed: boolean;
     content?: ReactNode;
     appearanceButtonSize: AppearanceButtonSizeEnum;
     appearanceButtonType: AppearanceButtonTypeEnum;
@@ -57,6 +59,7 @@ export interface VisibilityMap {
     generalIsRightAligned: boolean;
     generalStartOpen: boolean;
     generalAutoClose: boolean;
+    renderMenuContentWhenClosed: boolean;
     content: boolean;
     appearanceButtonSize: boolean;
     appearanceButtonType: boolean;

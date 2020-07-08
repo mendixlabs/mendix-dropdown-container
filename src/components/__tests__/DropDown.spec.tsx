@@ -6,6 +6,7 @@ import { DropDown, DropDownProps } from "../DropDown";
 describe("DropDown", () => {
     it("should render the structure correctly", () => {
         const props: DropDownProps = {
+            renderClosed: true,
             isDropUp: true,
             isRightAligned: true,
             extraClasses: "",

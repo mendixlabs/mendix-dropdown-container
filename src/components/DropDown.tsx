@@ -18,6 +18,7 @@ export interface DropDownProps {
     isRightAligned: boolean;
     startOpen: boolean;
     autoClose: boolean;
+    renderClosed: boolean;
     content?: ReactNode;
     buttonSize: AppearanceButtonSizeEnum;
     buttonType: AppearanceButtonTypeEnum;
@@ -117,14 +118,15 @@ export class DropDownInternal extends Component<DropDownProps, DropDownState> {
     }
 
     private renderMenu(): ReactNode {
-        const { content, isRightAligned } = this.props;
+        const { content, isRightAligned, renderClosed } = this.props;
+        const { open } = this.state;
 
         return (
             <div
                 className={classNames("dropdown-menu", { "dropdown-menu-right": isRightAligned })}
                 onClick={this.handleMenuClick}
             >
-                {content}
+                {!open && !renderClosed ? null : content}
             </div>
         );
     }
@@ -209,31 +211,33 @@ export class DropDownInternal extends Component<DropDownProps, DropDownState> {
 export const DropDown = onClickOutside(DropDownInternal);
 
 export const getFilteredProps = (
-    props: DropdownContainerContainerProps | DropdownContainerPreviewProps,
-    isWebModeler = false
-): DropDownProps => {
-    const {
+    {
+        renderMenuContentWhenClosed,
         generalButtonGlyphicon,
         generalIsDropUp,
         generalIsRightAligned,
         generalStartOpen,
         generalAutoClose,
         content,
+        class: className,
         appearanceButtonSize,
         appearanceButtonType,
         splitButtonSplitButtonActive
-    } = props;
+    }: DropdownContainerContainerProps | DropdownContainerPreviewProps,
+    isWebModeler = false
+): DropDownProps => {
     const returnProps: DropDownProps = {
         glyphicon: generalButtonGlyphicon,
         isDropUp: generalIsDropUp,
         isRightAligned: generalIsRightAligned,
         startOpen: generalStartOpen,
         autoClose: generalAutoClose,
+        renderClosed: renderMenuContentWhenClosed,
         content,
         buttonSize: appearanceButtonSize,
         buttonType: appearanceButtonType,
         splitButtonActive: splitButtonSplitButtonActive,
-        extraClasses: props.class,
+        extraClasses: className,
         isWebModeler
     };
     return returnProps;

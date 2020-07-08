@@ -32,6 +32,10 @@
                 <caption>Menu self-close</caption>
                 <description>If set to true: clicking on the menu or it's buttons will close the dropdown menu.</description>
             </property>
+            <property key="renderMenuContentWhenClosed" type="boolean" defaultValue="true">
+                <caption>Render closed content</caption>
+                <description>This can be set to false if you happen to have a lot of content to be rendered. This could impact the performance of your page. Only disable when having performance issues.</description>
+            </property>
         </propertyGroup>
         <propertyGroup caption="Elements">
             <property key="content" type="widgets" required="false">
