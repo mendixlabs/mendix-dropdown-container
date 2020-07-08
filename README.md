@@ -63,7 +63,7 @@ Test-project can be found here: [https://dropdownpluginwidg-sandbox.mxapps.io](h
 
 ## Known issues
 
-- **(Platform issue)** __A Dropdown container cannot be used directly in a table.__ If you want to use a dropdown in a table, make sure you surround your container with a dataview. One way to do this is to add a dataview with a Nanoflow datasource. The Nanoflow simply passes the context object to the dataview. See [#1](https://github.com/JelteMX/mendix-dropdown-container/issues/1)
+- **(Platform issue)** __A Dropdown container cannot be used directly in a table.__ See [#1](https://github.com/JelteMX/mendix-dropdown-container/issues/1) and the top of this README. You are adviced to update to Mendix Studio 8.11, that should fix this issue.
 
 ## Issues, suggestions and feature requests
 
