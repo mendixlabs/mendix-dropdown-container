@@ -1,3 +1,4 @@
+[![Apache License](https://img.shields.io/badge/license-Apache%202.0-orange.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Build Status](https://travis-ci.org/JelteMX/mendix-dropdown-container.svg?branch=master)](https://travis-ci.org/JelteMX/mendix-dropdown-container)
 [![Dependencies](https://david-dm.org/JelteMX/mendix-dropdown-container.svg)]([https://david-dm.org/JelteMX/mendix-dropdown-container](https://david-dm.org/JelteMX/mendix-dropdown-container))
 [![DevDependencies](https://david-dm.org/JelteMX/mendix-dropdown-container/dev-status.svg)]([https://david-dm.org/JelteMX/mendix-dropdown-container?type=dev](https://david-dm.org/JelteMX/mendix-dropdown-container?type=dev))
@@ -5,6 +6,7 @@
 [![Studio](https://img.shields.io/badge/Studio%20version-8.2%2B-blue.svg)](https://appstore.home.mendix.com/link/modeler/)
 [![GitHub release](https://img.shields.io/github/release/JelteMX/mendix-dropdown-container)](https://github.com/JelteMX/mendix-dropdown-container/releases/latest)
 [![GitHub issues](https://img.shields.io/github/issues/JelteMX/mendix-dropdown-container)](https://github.com/JelteMX/mendix-dropdown-container/issues)
+[![Available](https://img.shields.io/badge/Test%20Project-available-green.svg)](https://github.com/JelteMX/widget-test-projects)
 
 # Dropdown Container
 
@@ -13,6 +15,12 @@ Add Mendix elements to a dropdown container. Heavily based on [DropDownDivConver
 ![AppStore](/assets/AppStoreIcon.png)
 
 From Mendix 8.2.x and upwards it is possible to to add standard Mendix components to widgets. This Dropdown Container will behave as a dropdown button, but you can model the inside of the container using Mendix Studio Pro.
+
+> NOTE 1: A Pluggable widget (as of now) can only contain other pluggable components like buttons and texts. You cannot add listviews. This is a limitation in the platform, not the widget. See [here](https://github.com/JelteMX/mendix-dropdown-container/issues/3)
+
+> UPDATE 1: It seems that the capabilities for containment area's (that is used in this widget) is improved in [Mendix Studio 8.10](https://docs.mendix.com/releasenotes/studio-pro/8.10#8100). If you have issues, please update to at least 8.10.
+
+> NOTE 2: There seems to be an issue with rendering a Dropdown Container is a table (Platform issue). Advice: Update to [8.11](https://docs.mendix.com/releasenotes/studio-pro/8.11), it seems that some issues were found with the pluggable widgets regarding this, should be fixed in that version.
 
 ![Modeler](/assets/modeler.png)
 
@@ -55,7 +63,7 @@ Test-project can be found here: [https://dropdownpluginwidg-sandbox.mxapps.io](h
 
 ## Known issues
 
-- **(Platform issue)** __A Dropdown container cannot be used directly in a listview, only a dataview.__ If you want to use a dropdown in a listview, make sure you surround your container with a dataview. Obviously this should be the same as the context. One way to do this is to add a dataview with a Nanoflow datasource. The Nanoflow simply passes the context object to the dataview. See [#1](https://github.com/JelteMX/mendix-dropdown-container/issues/1)
+- **(Platform issue)** __A Dropdown container cannot be used directly in a table.__ See [#1](https://github.com/JelteMX/mendix-dropdown-container/issues/1) and the top of this README. You are adviced to update to Mendix Studio 8.11, that should fix this issue.
 
 ## Issues, suggestions and feature requests
 
