@@ -1,7 +1,5 @@
 [![Apache License](https://img.shields.io/badge/license-Apache%202.0-orange.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Build Status](https://travis-ci.org/JelteMX/mendix-dropdown-container.svg?branch=master)](https://travis-ci.org/JelteMX/mendix-dropdown-container)
-[![Dependencies](https://david-dm.org/JelteMX/mendix-dropdown-container.svg)]([https://david-dm.org/JelteMX/mendix-dropdown-container](https://david-dm.org/JelteMX/mendix-dropdown-container))
-[![DevDependencies](https://david-dm.org/JelteMX/mendix-dropdown-container/dev-status.svg)]([https://david-dm.org/JelteMX/mendix-dropdown-container?type=dev](https://david-dm.org/JelteMX/mendix-dropdown-container?type=dev))
 [![Support](https://img.shields.io/badge/Support-Community%20(no%20active%20support)-orange.svg)](https://docs.mendix.com/developerportal/app-store/app-store-content-support)
 [![Studio](https://img.shields.io/badge/Studio%20version-8.2%2B-blue.svg)](https://appstore.home.mendix.com/link/modeler/)
 [![GitHub release](https://img.shields.io/github/release/JelteMX/mendix-dropdown-container)](https://github.com/JelteMX/mendix-dropdown-container/releases/latest)
